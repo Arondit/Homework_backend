@@ -1,0 +1,47 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1>Заполните анкету</h1>
+    <div class="form">
+                    <form action="/cgi-bin/form.py" method="POST">
+                        <label><input type="text" placeholder="имя" name='name'> </label>
+                        <br>
+                        <label><input type="email" placeholder="e-mail" name='e_mail'></label>
+                        <br>
+                        <label><input type='number' name='year'></label>
+                        <br>
+                        Пол: 
+                        <br>
+                        <label><input type="radio" name="sex"> женский </label>
+                        <label><input type="radio" name="sex"> мужской </label>
+                        <br>
+                        Количество конечностей:
+                        <br>
+                        <label><input type="radio" name="hands" value='0'> 0 </label>
+                        <label><input type="radio" name="hands" value='1'> 1 </label>
+                        <label><input type="radio" name="hands" value='2'> 2 </label>
+                        <label><input type="radio" name="hands" value='3'> 3 </label>
+                        <label><input type="radio" name="hands" value='4'> 4 </label>
+                        <br>
+                        <label> Сверхспособности:
+                        <br>
+                        <select name="abilities" multiple="multiple">
+                            <option>Бессмертие</option>
+                            <option>Левитация</option>
+                            <option>Телепортация</option>
+                        </select></label>
+                        <br>
+                        <label><textarea id="main" placeholder="биография" name='biography'></textarea></label>
+                        <br>
+                        <label><input type="checkbox" name='agreed'> С контрактом ознакомлен </label>
+                        <br>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+                </body>
